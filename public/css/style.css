@@ -1,0 +1,16 @@
+img{
+    height: 200px;
+    width: 200px;
+}
+body{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+    font-variant: small-caps;
+   margin: 20px;
+
+}
+div{
+    height: 700px;
+}
