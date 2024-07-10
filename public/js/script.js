@@ -28,11 +28,11 @@ const createProductList = () => {
     let productsList = "";
     products.forEach(product => {
         productsList += `
-            <div class="card" style="width:400px">
+            <div class="card" style="width:450px; margin-bottom:30px">
                 <img class="card-img-top" src="${product.images}" alt="Card image">
                 <hr>
                 <div class="card-body">
-                     <p class="card-title">Title:-${product.title}</p>
+                     <h2 class="card-title">${product.title}</h2>
                     <p class="card-text">Price:-${product.price}</p>
                     <p class="card-text">Discount:-${product.discountPercentage}%</p>
                     <p class="card-text">Rating:-${product.rating}</p>
@@ -41,7 +41,9 @@ const createProductList = () => {
                     <p class="card-text">Category:-${product.category}</p>
                     <p class="card-text">Description:-${product.description}</p>
                     <button type="button" onClick="addSaveToLater(${product.id})" class="btn btn-danger">Save For Later</button>
+
                 </div>
+                
             </div>
         `;
     });
@@ -76,11 +78,11 @@ const createSaveForLaterList = () => {
     let saveList = "";
     saveForLater.forEach(save => {
         saveList += `
-            <div class="card" style="width:400px">
+            <div class="card" style="width:450px;margin-bottom:30px">
                 <img class="card-img-top" src="${save.images}" alt="Card image">
                 <hr>
                 <div class="card-body">
-                    <p class="card-title">Title:-${save.title}</p>
+                    <h2 class="card-title">${save.title}</h2>
                     <p class="card-text">Price:-${save.price}</p>
                     <p class="card-text">Discount:-${save.discountPercentage}%</p>
                     <p class="card-text">Rating:-${save.rating}</p>
